@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Handlebars Terner Tutorial</title>
+    <link rel="stylesheet" href="css/terner.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/handlebars-v4.1.2.js"></script>
+</head>
+<body>
+
+    <div id="yagun">
+        <table id="yaTable">
+            <thead>
+                <tr>
+                    <th class="left">Kanál</th>
+                    <th class="left">pořad</th>
+                    <th class="right">rok</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>Prima cool</td>
+                        <td>Top Gear</td>
+                        <td class="right valid">2014</td>
+                    </tr>
+                    <tr>
+                            <td>Prima cool</td>
+                            <td>Simpsons</td>
+                            <td class="right invalid">2014</td>
+                        </tr>
+                </tbody>
+            </thead>
+        </table>
+    </div>
+
+    <div id="ternerData"></div>
+    <script id="esd-template" type="text/x-handlebars-template">
+        <h1>Some {{{name}}} items</h1>
+        {{{ternerHelper1}}}
+        <ol>
+            {{#each items}}
+                <li>{{item}}</li>
+            {{/each}}
+        </ol>
+    </script>
+    <script src="js/terner.js"></script>
+</body>
+</html>

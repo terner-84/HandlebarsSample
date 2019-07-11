@@ -1,0 +1,65 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#yaTable {
+    border-collapse: collapse;
+    width: 75%;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.valid {
+    background-image: url("../pic/valid.png");
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: center;
+}
+
+.invalid {
+    background-image: url("../pic/invalid.png");
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: center;
+}
+
+h1 i {
+    color: blue;
+    cursor: pointer;
+    border: 1px solid salmon;
+    padding: 3px;
+    margin: 6px;
+}
+
+h1 i:hover {
+    background-color: beige;
+}
+
+h1 i:active {
+    background-color: black;
+    color: aliceblue;
+}
+
+i {
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 8px;
+    font-size: 12pt;
+}
+
+tr {
+    border-bottom: 2px solid green;
+}
+
+tr:hover {
+    background-color: skyblue;
+}
